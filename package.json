@@ -1,0 +1,25 @@
+{
+  "name": "@kryptonstudio/toolkit",
+  "version": "1.0.0",
+  "description": "Javascript toolkit",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn build:lib && yarn build:docs",
+    "build:lib": "tsc",
+    "build:docs": "tsdoc",
+    "test": "jest --collectCoverage",
+    "test:watch": "jest --watchAll --collectCoverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.1",
+    "jest-extended": "^0.11.5",
+    "ts-jest": "^27.0.5",
+    "tsdoc": "^0.0.4",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "hyperid": "^2.3.1"
+  }
+}
